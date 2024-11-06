@@ -18,21 +18,16 @@ table {
 font-family: calibri;
 border-collapse: collapse;
 width: 30%;
-
 }
-
 td, th {
 border: 1px solid #dddddd;
 text-align: left;
 padding: 8px;
 }
-
 tr:nth-child(even) {
 background-color: #dddddd;
 }
-
 </style>
-
 <style>
 p.ex1 {
 margin-left: 250px;
@@ -46,9 +41,7 @@ margin-left: 250px;
 <style>
 .mySlides {display:none;}
 </style>
-
 <body style ="background-color:#FFFFFF;margin-left:50px">
-
 <p class="ex1">
 <pre>
 <!table of contents>
@@ -176,6 +169,7 @@ overcome as well (NBAA – National Business Aviation Association, 2018).
 </p>
 </pre>
 </p>
+	
 <hr>
 <h2 id="Conclusion" style="font-family:calibri;"><b>Conclusion:</b></h2>
 <p class="ex1"><pre><p style="font-family:calibri;">	In conclusion, it seems like SST will not play a significant role in the future of aviation,
@@ -194,13 +188,10 @@ the cost.
 
 <hr>
 <h2 id="Figures and tables" style="font-family:calibri;"><b>Figures and tables:</b></h2>
-
 <img src="Figure1.jpg" alt="Figure 1" width="886" height="348">
 <p style="font-family:calibri;"><i>Figure 1: COC/ASM figures for various sub and supersonic aircraft.</i></p>
-
 <img src="Figure2.jpg" alt="Figure 2" width="689" height="688">
 <p style="font-family:calibri;"><i>Figure 2: A map displaying the possible routes of Overture from LHR.</i></p>
-
 <p style="font-family:calibri;"><i>Table 1: A table showing the potential routes and times of Overture from LHR.</i></p>
 <table style="width:50%">
 <tr>
@@ -232,17 +223,6 @@ the cost.
 <td>20:00-21:00</td>
 </tr>
 </table>
-
-<p id="date&time"></p>
-
-<script>
-
-//Javascript to display the date and time on my webpage
-
-const d= new Date();
-document.getElementById("date&time").innerHTML=d;
-
-</script>
 
 <hr>
 <h2 id="References" style="font-family:calibri;"><b>References:</b></h2>
@@ -319,88 +299,6 @@ New York’s Hudson River.</i> Available at:
 <a href="https://edition.cnn.com/travel/supersonic-concorde-airplane-floats-down-hudson-river-new-york/index.html">https://edition.cnn.com/travel/supersonic-concorde-airplane-floats-down-
 hudson-river-new-york/index.html</a> [Accessed 16 Oct. 2024].</li></ul></p></pre>
 
-<head>
-<title>MathML Example</title>
-</head>
-<body>
-<hr>
-<h1 style="font-family:calibri;">Quadratic Formula</h1>
-<p style="font-family:calibri;">The qudratic formula is given by:</p>
-<!--MathML representations of he quadratic formula-->
-<math xmlns="https://www.w3.org/1998/Math/MathML">
-<mrow>
-<msup><mi>x</mi><mn>2</mn></msup>
-<mo>+</mo><mi>4</mi><mo>&InvisibleTimes;</mo><mi>x</mi>
-<mo>+</mo><mi>4</mi>
-<mo>=</mo>
-<mi>0</mi>
-</body>
-
-<head>
-<title>ChangeButtonColour</title>
-</head>
-<body>
-<button id="colorButton">Click me to change colour</button>
-<script>
-//Get a reference to the button element
-var button = document.getElementById("colorButton");
-
-//Function to change the button color
-function changeColor(){
-//Generate a random color (hexadecimal)
-var randomColor = "#"+Math.floor(Math.random()*16777215).toString(16);
-
-//Set the button's background color to the random color
-button.style.backgroundColor=randomColor;
-}
-
-//Add a click event listener to the button
-button.addEventListener("click", changeColor);
-</script>
-</body>
-
-<head>
-<title>Alert Input Text</title>
-</head>
-<body>
-<input type="text" id="textInput" placeholder="Enter text">
-<button id="alertButton">Show Alert</button>
-
-<script>
-// Get references to the input field and button
-var input = document.getElementById("textInput");
-var button = document.getElementById("alertButton");
-
-//Function to show an alert with the input text
-function showAlert() {
-ver inputText = input.value;
-alert("You entered: " + inputText);
-}
-//Add a click event listener to the button
-button.addEventListener("click", show Alert);
-</script>
-</body>
-
-<head>
-<title>Random Number Generator</title>
-</head>
-<body>
-<button id="generateButton">Generate random number</button>
-<p id="randomNumber"></p>
-<script>
-// Get a reference to the button and paragraph
-var button = document.getElementById("generateButton");
-var paragraph = document.getElementById("randomNumber");
-
-// Function o generate and display a random number
-function generateRandomNumber() {
-var randomNumber = Mah.floor(Math.random() * 10) + 1;
-paragraph.textContent = "Random Number: " + randomNumber;
-}
-
-// Add a click event listener to the button
-button.addEventListener("click", generateRandomNumber);
-</script>
 </body>
 
 </html>
