@@ -73,7 +73,7 @@ margin-left: 250px;
 <hr>
 <h2 id="Abstract" style="font-family:calibri;"><b>Abstract:</b></h2>
 <p class="ex1">
-<pre>
+<pre id="Abstract_InText">
 <p style="font-family:calibri">
 	The travel boom of the 1960s presented an interesting dilemma to the aviation
 industry, whether the way forward was with supersonic aircraft (SST), or mainstream
@@ -387,13 +387,11 @@ hudson-river-new-york/index.html</a> [Accessed 16 Oct. 2024].</li></ul></p></pre
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
-    const FiguresCount = displayWordCount("Figures_InText");
+    const IntroductionCount = displayWordCount("Abstract_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + FiguresCount;
+    const totalWordCount = AbstractCount;
     // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+    document.getElementById("totalWordCount").innerText = `Abstract word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
