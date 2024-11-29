@@ -297,36 +297,7 @@ New York’s Hudson River.</i> Available at:
 <a href="https://edition.cnn.com/travel/supersonic-concorde-airplane-floats-down-hudson-river-new-york/index.html">https://edition.cnn.com/travel/supersonic-concorde-airplane-floats-down-
 hudson-river-new-york/index.html</a> [Accessed 16 Oct. 2024].</li></ul></p></pre>
 
-<!-- Placeholder for total word count -->
-<p id="totalWordCount"></p>
-<hr>
-<script>
-  // Function to calculate and display word count for a specified section
-  function displayWordCount(sectionId, outputId) {
-    // Get the text content from the specified section
-    const text = document.getElementById(sectionId).textContent;
-    // Split text into words based on spaces and filter out any empty strings
-    const wordArray = text.trim().split(/\s+/);
-    // Count the words
-    const wordCount = wordArray.length;
-    // Return the word count for summing purposes
-    return wordCount;
-  }
-  // Function to calculate and display total word count from selected sections
-  function displayTotalWordCount() {
-    // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const AnalysisCount = displayWordCount("Analysis_InText");
-    const FiguresCount = displayWordCount("Figures_InText");
-    // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount + FiguresCount;
-    // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
-  }
-  // Run the function for specific sections and display total count when the page loads
-  window.onload = displayTotalWordCount;
-</script>
-	
+    <!-- Last commit time display -->
 <div id="last-updated">Loading last update time...</div>
 <!-- Verify Button -->
 <button onclick="verifyLastUpdatedTime()" style="display: block; margin: 10px auto; padding: 8px 16px;">
@@ -334,8 +305,8 @@ hudson-river-new-york/index.html</a> [Accessed 16 Oct. 2024].</li></ul></p></pre
 </button>
 <script>
     async function getLastUpdatedTime() {
-        const username = 'FEPSFY6860801';
-        const repo = 'FEPSFY6860801';
+        const username = 'nr0025';
+        const repo = 'FY0025';
        
         const url = `https://api.github.com/repos/${username}/${repo}/commits`;
         try {
@@ -370,6 +341,36 @@ hudson-river-new-york/index.html</a> [Accessed 16 Oct. 2024].</li></ul></p></pre
     }
     // Initial load to display the time on page load
     window.onload = getLastUpdatedTime;
+</script>
+	
+<!-- Placeholder for total word count -->
+<p id="totalWordCount"></p>
+<hr>
+<script>
+  // Function to calculate and display word count for a specified section
+  function displayWordCount(sectionId, outputId) {
+    // Get the text content from the specified section
+    const text = document.getElementById(sectionId).textContent;
+    // Split text into words based on spaces and filter out any empty strings
+    const wordArray = text.trim().split(/\s+/);
+    // Count the words
+    const wordCount = wordArray.length;
+    // Return the word count for summing purposes
+    return wordCount;
+  }
+  // Function to calculate and display total word count from selected sections
+  function displayTotalWordCount() {
+    // Calculate word count for each section and accumulate the total
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const AnalysisCount = displayWordCount("Analysis_InText");
+    const FiguresCount = displayWordCount("Figures_InText");
+    // Calculate the sum of all selected sections
+    const totalWordCount = IntroductionCount + AnalysisCount + FiguresCount;
+    // Display the total word count
+    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+  }
+  // Run the function for specific sections and display total count when the page loads
+  window.onload = displayTotalWordCount;
 </script>
 	
 </body>
