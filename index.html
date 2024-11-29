@@ -183,6 +183,7 @@ the cost.
 </p></pre></p>
 
 <hr>
+<pre id="Figures_InText">
 <h2 id="Figures and tables" style="font-family:calibri;"><b>Figures and tables:</b></h2>
 <img src="Figure1.jpg" alt="Figure 1" width="886" height="348">
 <p style="font-family:calibri;"><i>Figure 1: COC/ASM figures for various sub and supersonic aircraft (Klingenberg <i>et al.</i>, 2024).</i></p>
@@ -218,6 +219,7 @@ the cost.
 <td>16:00-18:30</td>
 <td>20:00-21:00</td>
 </tr></table>
+</pre>
 
 
 <hr>
@@ -318,8 +320,9 @@ hudson-river-new-york/index.html</a> [Accessed 16 Oct. 2024].</li></ul></p></pre
     // Calculate word count for each section and accumulate the total
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
+    const FiguresCount = displayWordCount("Figures_InText");
     // Calculate the sum of all selected sections
-    const TotalWordCount = IntroductionCount + AnalysisCount;
+    const TotalWordCount = IntroductionCount + AnalysisCount + FiguresCount;
     // Display the total word count
     document.getElementById("totalWordCount").innerText = `Total word count: ${TotalWordCount}`;
   }
