@@ -319,9 +319,9 @@ hudson-river-new-york/index.html</a> [Accessed 16 Oct. 2024].</li></ul></p></pre
     const IntroductionCount = displayWordCount("Introduction_InText");
     const AnalysisCount = displayWordCount("Analysis_InText");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AnalysisCount;
+    const TotalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
-    document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
+    document.getElementById("totalWordCount").innerText = `Total word count: ${TotalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
   window.onload = displayTotalWordCount;
